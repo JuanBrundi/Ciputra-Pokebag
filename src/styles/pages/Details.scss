@@ -1,0 +1,110 @@
+#detail-wrapper {
+  position: relative;
+  .top-content {
+    padding: 16px;
+    .name {
+      margin-bottom: 24px;
+      font-size: $fontSizeXL;
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    .type-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .image-wrapper {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+  }
+  .bottom-content {
+    padding: 32px 16px 16px 16px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background: #fff;
+    .title {
+      font-size: $fontSizeXL;
+      margin-bottom: 16px;
+    }
+    .moves-container {
+      display: flex;
+      flex-flow: row wrap;
+      .type-card {
+        background-color: rgb(15, 98, 254);
+      }
+    }
+  }
+  .pokeball-wrapper {
+    width: 480px;
+    position: fixed;
+    bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.modal-gotcha {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 480px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .nickname-form {
+      background: #fff;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      padding: 32px 16px 16px 16px;
+      width: 100%;
+      .title {
+        font-size: $fontSizeXL;
+        margin-bottom: 16px;
+      }
+
+      .label {
+        font-size: $fontSizeM;
+        margin-bottom: 8px;
+      }
+      input {
+        border-radius: 10px;
+        width: 100%;
+        padding: 16px 14px;
+        border-radius: 0.5rem;
+        border: 1px solid rgb(141, 141, 141);
+        margin-bottom: 16px;
+      }
+    }
+
+    .confirmation-form {
+      background: #fff;
+      border-top-left-radius: 32px;
+      border-top-right-radius: 32px;
+      padding: 32px 16px 16px 16px;
+      width: 100%;
+      .title {
+        font-size: $fontSizeXL;
+        margin-bottom: 24px;
+      }
+      .btn-wrapper{
+        display: flex;
+        justify-content: space-between;
+        .reverse{
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

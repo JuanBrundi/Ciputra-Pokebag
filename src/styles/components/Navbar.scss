@@ -1,0 +1,11 @@
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  .anchor{
+    font-size: $fontSizeL;
+  }
+  .hide{
+    display: none;
+  }
+}

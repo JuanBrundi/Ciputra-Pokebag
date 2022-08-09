@@ -1,0 +1,29 @@
+.custom-btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgb(15, 98, 254);
+  padding: 16px 14px;
+  span {
+    color: rgb(255, 255, 255);
+  }
+}
+
+.reverse {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 100%;
+  padding: 16px 14px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(15, 98, 254);
+  background: #fff;
+  span {
+    color: rgb(15, 98, 254);
+  }
+}

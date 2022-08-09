@@ -1,0 +1,23 @@
+.card-href{
+  .card-wrapper{
+    width: 100%;
+    position: relative;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 130px;
+    background-color: #fff;
+    span{
+      font-size: $fontSizeL;
+      text-transform: capitalize;
+    }
+  
+    img{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+  }
+}

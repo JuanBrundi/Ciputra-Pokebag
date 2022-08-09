@@ -1,0 +1,15 @@
+#bag {
+  padding: 16px;
+  .title {
+    font-size: $fontSizeXL;
+    margin-bottom: 24px;
+    font-weight: bold;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+}
