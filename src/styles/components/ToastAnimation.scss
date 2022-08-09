@@ -1,0 +1,32 @@
+.toast-animation {
+  background: #e20909;
+  padding: 16px 100px;
+  position: absolute;
+  left: 200px;
+  opacity: 0;
+  animation-name: walk;
+  animation-duration: 5s;
+  z-index: 1;
+  border-radius: 10px;
+  span {
+    color: #fff;
+    font-size: $fontSizeXL;
+    text-transform: capitalize;
+  }
+}
+
+@keyframes walk {
+  0% {
+    left: 960px;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    left: 200px;
+    opacity: 0;
+  }
+}

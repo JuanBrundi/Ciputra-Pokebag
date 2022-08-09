@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { DetailContext, GlobalContext } from "../context";
 
 //Components
-import { TypeCard, PokeShakeAnimation, Button } from "../components"
+import { TypeCard, PokeShakeAnimation, Button, ToastAnimation } from "../components"
 
 const Details = () => {
   const { name } = useParams();
@@ -13,6 +13,7 @@ const Details = () => {
   const { getDetail, pokeDetail } = useContext(DetailContext)
 
   const [cathing, setCatching] = useState(false);
+  const [isRunaway, setIsrunway] = useState(false);
   const [showGotchaModa, setShowGotchaModal] = useState(false);
   const [showConfimationModal, setShowConfirmationModal] = useState(false);
   const [nickname, setNickname] = useState("")
@@ -96,12 +97,20 @@ const Details = () => {
   }
 
   useEffect(() => {
+    if(isRunaway) {
+      setTimeout(() => {
+        setIsrunway(false)
+      }, 3000)
+    }
+  }, [isRunaway])
+
+  useEffect(() => {
     if (!cathing) return;
 
     const catchRate = Math.floor(Math.random() * 100);
-
-    if (catchRate <= 30) {
+    if (catchRate < 50) {
       setTimeout(() => {
+        setIsrunway(true)
         setCatching(false)
       }, 5000)
       return;
@@ -118,6 +127,7 @@ const Details = () => {
 
   return (
     <>
+      {isRunaway ? <ToastAnimation message={`${name} run away`} /> : null}
       <div id="detail-wrapper">
         <div className="top-content">
           <p className="name">{pokeDetail.name}</p>

@@ -5,6 +5,7 @@ import TypeCard from "./TypeCard";
 import PokeShakeAnimation from "./PokeShakeAnimation";
 import Button from "./Button";
 import Navbar from "./Navbar";
+import ToastAnimation from "./ToastAnimation";
 
 export {
   Card,
@@ -13,5 +14,6 @@ export {
   PokeShakeAnimation,
   Navbar,
   LoadingCard,
-  Button
+  Button,
+  ToastAnimation
 }
